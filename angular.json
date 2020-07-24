@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CourseProject": {
+    "RecipeBookProject": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CourseProject",
+            "outputPath": "dist/RecipeBookProject",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "CourseProject:build"
+            "browserTarget": "RecipeBookProject:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "CourseProject:build:production"
+              "browserTarget": "RecipeBookProject:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CourseProject:build"
+            "browserTarget": "RecipeBookProject:build"
           }
         },
         "test": {
@@ -115,18 +115,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "CourseProject:serve"
+            "devServerTarget": "RecipeBookProject:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "CourseProject:serve:production"
+              "devServerTarget": "RecipeBookProject:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "CourseProject",
+  "defaultProject": "RecipeBookProject",
   "cli": {
     "analytics": false
   }
